@@ -30,9 +30,9 @@ def test_hardmode(browser, number):
     button1.click()
     # Вводим логин и пароль
     input1 = browser.find_element(By.CSS_SELECTOR, "#id_login_email")
-    input1.send_keys("***)
+    input1.send_keys("****)
     input2 = browser.find_element(By.CSS_SELECTOR, "#id_login_password")
-    input2.send_keys("***")
+    input2.send_keys("****")
     # Отправляем заполненную форму
     button2 = WebDriverWait(browser, 10).until(
         EC.element_to_be_clickable((By.CSS_SELECTOR, "button.sign-form__btn"))
