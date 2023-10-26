@@ -19,8 +19,8 @@ def login(browser_fxtr):
     button.click()
 
     # Ввод логина и пароля
-    login = "ккк"
-    password = "ккк"
+    login = "***"
+    password = "***"
     browser_fxtr.find_element(By.CSS_SELECTOR, "#id_login_email").send_keys(login)
     browser_fxtr.find_element(By.CSS_SELECTOR, "#id_login_password").send_keys(password)
     browser_fxtr.find_element(By.CSS_SELECTOR, ".sign-form__btn").click()
